@@ -1,2 +1,4 @@
-package com.pluralsight;public class DealershipFileManager {
+package com.pluralsight;
+
+public class DealershipFileManager {
 }
