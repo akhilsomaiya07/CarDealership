@@ -1,14 +1,14 @@
 package com.pluralsight;
 
 public class Vehicle {
-    private int vin;
-    private int year;
-    private String make;
-    private String model;
-    private String vehicleType;
-    private String color;
-    private int odometer;
-    private double price;
+    int vin;
+    int year;
+    String make;
+    String model;
+    String vehicleType;
+    String color;
+    int odometer;
+    double price;
 
     public Vehicle(int vin, int year, String make, String model, String vehicleType, String color, int odometer, double price) {
         this.vin = vin;
@@ -87,9 +87,6 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return String.format(
-                "Vehicle{vin=%d, year=%d, make='%s', model='%s', vehicleType='%s', color='%s', odometer=%d, price=%.2f}",
-                vin, year, make, model, vehicleType, color, odometer, price
-        );
+        return "Vehicle [vin=" + vin + ", year=" + year + ", make=" + make + ", model=" + model + ", vehicleType=" + vehicleType + ", color=" + color + ", odometer=" + odometer + ", price=" + price + "]";
     }
 }
